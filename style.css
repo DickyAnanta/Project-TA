@@ -1,0 +1,98 @@
+@import url("https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600&family=Montserrat:wght@100;200;300;400;500;600;700&family=Nunito:wght@200;300;400;600;700&family=Poppins:wght@100;200;300;400;500;600;700&display=swap");
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+#sidebar {
+  background-color: salmon;
+}
+
+/* list order */
+.custom-select {
+  font-weight: 200;
+  text-transform: capitalize;
+}
+
+.ukuranfont tr th {
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.ukuranfont tr td {
+  font-size: 13px;
+}
+
+.card-title {
+  font-size: 14px;
+}
+
+.ukuranfont button {
+  font-size: 13px;
+}
+/* list order */
+
+/* order */
+.ukuranfontorder {
+  font-size: 13px;
+}
+
+.ukuranfontorder Label {
+  font-size: 14px;
+}
+
+.ukuranfontorder ::placeholder {
+  font-size: 13px;
+}
+
+.ukuranfontorder option {
+  font-size: 13px;
+}
+
+/* menu */
+.container-fluid h1 {
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+.paket h2 {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.paket img {
+  width: 100px;
+  height: 100px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+}
+
+.paket p {
+  text-align: center;
+  font-weight: 200;
+  margin-top: -10px;
+  font-size: 0.8rem;
+}
+
+.paket h2 {
+  text-align: center;
+  font-weight: 600;
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+  margin-top: 1rem;
+}
+
+.paket .card {
+  border-radius: 10px;
+}
+
+.paket button {
+  margin-top: -0.5rem;
+  margin-left: 3.8rem;
+  margin-bottom: 1rem;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 5px;
+}
