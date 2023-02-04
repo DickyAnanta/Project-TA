@@ -28,7 +28,7 @@
   <!-- summernote -->
   <link rel="stylesheet" href="plugins/summernote/summernote-bs4.min.css">
   <!-- css saya -->
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="<?php echo base_url('/css') ?>style.css">
 </head>
 <body class="hold-transition sidebar-mini layout-fixed">
 <div class="wrapper">

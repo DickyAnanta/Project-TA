@@ -30,7 +30,7 @@
   <!-- summernote -->
   <link rel="stylesheet" href="plugins/summernote/summernote-bs4.min.css">
   <!-- css saya -->
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="<?php echo base_url('/css') ?>/style.css">
 </head>
 <div class="wrapper">
 
@@ -134,64 +134,68 @@
           </div>
           </div>
         </div>
-
         <div class="row mb-2">
           <div class="col-sm-6">
             <h1 class="mb-3 mt-4">Menu Makanan</h1>
           </div><!-- /.col -->
         </div>
-        <div class="row row-cols-5 paket">
-          <div class="col">
-          <div class="card" style="width: 11rem;">
-            <img src="img/menu1.png" class="card-img-top" alt="...">
-            <div class="body">
-              <h2 class="head">Pizza</h2>
-              <p>30K</p>
-                <button type="button" class="btn bg-gradient-olive btn-xs">Order</button>
+
+        <!-- looping menu dari data base -->
+        <?php foreach($menu as $m) : ?>
+          <div class="row row-cols-5 paket">
+            <div class="col">
+            <div class="card" style="width: 11rem;">
+              <img src="img/menu1.png" class="card-img-top" alt="...">
+              <div class="body">
+                <h2 class="head"><?= $m['title']; ?></h2>
+                <p><?= $m['harga']; ?></p>
+                  <button type="button" class="btn bg-gradient-olive btn-xs">Order</button>
+              </div>
+            </div>
+            </div>
+            <div class="col">
+            <div class="card" style="width: 11rem;">
+              <img src="img/menu1.png" class="card-img-top" alt="...">
+              <div class="body">
+                <h2 class="head"><?= $m['title']; ?></h2>
+                <p><?= $m['harga']; ?></p>
+                  <button type="button" class="btn bg-gradient-olive btn-xs">Order</button>
+              </div>
+            </div>
+            </div>
+            <div class="col">
+            <div class="card" style="width: 11rem;">
+              <img src="img/menu1.png" class="card-img-top" alt="...">
+              <div class="body">
+                <h2 class="head"><?= $m['title']; ?></h2>
+                <p><?= $m['harga']; ?></p>
+                  <button type="button" class="btn bg-gradient-olive btn-xs">Order</button>
+              </div>
+            </div>
+            </div>
+            <div class="col">
+            <div class="card" style="width: 11rem;">
+              <img src="img/menu1.png" class="card-img-top" alt="...">
+              <div class="body">
+                <h2 class="head"><?= $m['title']; ?></h2>
+                <p><?= $m['harga']; ?></p>
+                  <button type="button" class="btn bg-gradient-olive btn-xs">Order</button>
+              </div>
+            </div>
+            </div>
+            <div class="col">
+            <div class="card" style="width: 11rem;">
+              <img src="img/menu1.png" class="card-img-top" alt="...">
+              <div class="body">
+                <h2 class="head"><?= $m['title']; ?></h2>
+                <p><?= $m['harga']; ?></p>
+                  <button type="button" class="btn bg-olive btn-xs">Order</button>
+              </div>
+            </div>
             </div>
           </div>
-          </div>
-          <div class="col">
-          <div class="card" style="width: 11rem;">
-            <img src="img/menu1.png" class="card-img-top" alt="...">
-            <div class="body">
-              <h2 class="head">Pizza</h2>
-              <p>30K</p>
-                <button type="button" class="btn bg-gradient-olive btn-xs">Order</button>
-            </div>
-          </div>
-          </div>
-          <div class="col">
-          <div class="card" style="width: 11rem;">
-            <img src="img/menu1.png" class="card-img-top" alt="...">
-            <div class="body">
-              <h2 class="head">Pizza</h2>
-              <p>30K</p>
-                <button type="button" class="btn bg-gradient-olive btn-xs">Order</button>
-            </div>
-          </div>
-          </div>
-          <div class="col">
-          <div class="card" style="width: 11rem;">
-            <img src="img/menu1.png" class="card-img-top" alt="...">
-            <div class="body">
-              <h2 class="head">Pizza</h2>
-              <p>30K</p>
-                <button type="button" class="btn bg-gradient-olive btn-xs">Order</button>
-            </div>
-          </div>
-          </div>
-          <div class="col">
-          <div class="card" style="width: 11rem;">
-            <img src="img/menu1.png" class="card-img-top" alt="...">
-            <div class="body">
-              <h2 class="head">Pizza</h2>
-              <p>30K</p>
-                <button type="button" class="btn bg-olive btn-xs">Order</button>
-            </div>
-          </div>
-          </div>
-        </div>
+        <?php endforeach; ?>
+        <!-- end looping menu dari data base -->
 
         <div class="row mb-2">
           <div class="col-sm-6">
@@ -267,8 +271,8 @@
 </div>
 <!-- ./wrapper -->
 
-<!-- jQuery -->
-<script src="plugins/jquery/jquery.min.js"></script>
+  <!-- jQuery -->
+  <script src="plugins/jquery/jquery.min.js"></script>
 <!-- jQuery UI 1.11.4 -->
 <script src="plugins/jquery-ui/jquery-ui.min.js"></script>
 <!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->
@@ -303,3 +307,4 @@
 <script src="dist/js/pages/dashboard.js"></script>
 </body>
 </html>
+
